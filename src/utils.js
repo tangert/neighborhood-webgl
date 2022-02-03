@@ -8,7 +8,7 @@ export function rgba(r, g, b, a) {
     r,
     g,
     b,
-    a: a || 1,
+    a: Math.floor(a * 255) || 255,
   };
 }
 

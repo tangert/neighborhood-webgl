@@ -139,7 +139,7 @@ function gridToImageData(grid) {
       pixels[i + 0] = cell.color.r;
       pixels[i + 1] = cell.color.g;
       pixels[i + 2] = cell.color.b;
-      pixels[i + 3] = 255;
+      pixels[i + 3] = cell.color.a;
     }
   }
   return new ImageData(pixels, w);
